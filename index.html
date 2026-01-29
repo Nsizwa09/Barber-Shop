@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHARP & FADE</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preload" href="main.css" as="style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="hero">
+        <header class="header">
+            <h1>SHARP & FADE</h1>
+        </header>
+            
+        <div class="hero-btn">
+            <button class="btn-one" onclick="scrollToSection('appoint')">Book Appointment</button> <br>
+            <button class="btn-one" onclick="scrollToSection('location')">Our Location</button> <br>
+            <button class="btn-one" onclick="location.href='tel:0780122274'">Contact Us</button> <br>
+            <button class="btn-two" onclick="location.href='#gallery'">View Gallery</button>
+        </div>           
+    </section>
+
+    <section class="about">
+        <div class="about-container">
+            <div class="about-content">
+                <h2>About Us</h2>
+
+                <p>Sharp & Fade is where raw urban culture meets precision grooming. We've built a space defined by sharp 
+                    blades, high energy and effortless style. Whether you secure your chair through online booking or 
+                    we drop by for an in-house visit, we guarantee a master-crafted cut.
+                </p>
+            </div>
+
+            <div class="location" id="location">
+                <h2>Location</h2>
+
+                <p>📍 5 Voortrekker Street, Bergville</p>
+                <p>📞 078 012 2274</p>
+                <p>🕒 Mon - Sun: 9 AM - 5 PM</p>
+            
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3455.0269938405425!2d31.02184067586602!3d-29.858680944048503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ef7aa7a1b7c2c59%3A0x8231b8b8821f00ed!2sDurban%2C%20South%20Africa!5e0!3m2!1sen!2sza!4v1618856114028!5m2!1sen!2sza"
+                        allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+            
+                <div class="cta-buttons">
+                    <a href="https://goo.gl/maps/your-custom-map-link" target="_blank">Get Directions</a>
+                </div>
+            </div>
+
+            <div class="appoint" id="appoint">
+                <h2>Book Your Appointment</h2>
+                <form id="booking-form">
+                    <input type="text" id="name" name="name" placeholder="Name" required><br>
+                    <input type="tel" id="phone" name="phone" placeholder="Phone Number" required><br>
+
+                    <select id="service" name="service" required>
+                    <option value="" disabled selected>Select Service</option>
+                    <option id="in-shop" value="In Shop">In Shop Haircut</option>
+                    <option value="At Home">At Home Haircut</option>
+                    </select><br>
+
+                    <input type="date" id="date" name="date" required><br>
+                    <input type="time" id="time" name="time" required><br>
+
+                    <button type="submit" onclick="sendToWhatsApp()">Book Via WhatsApp</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-column">
+        <h3 class="footer-logo">Sharp & Fade</h3>
+        <p class="footer-text">
+            Sharp & Fade is your go-to barber shop for precision cuts and stylish fades. 
+        </p>
+        </div>
+
+        <div class="footer-column">
+        <h4>Company</h4>
+        <ul>
+            <li><a href="#appoint">Book Appointment</a></li>
+            <li><a href="#location">Location</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+        </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-column">
+        <h4>Contact</h4>
+        <p>Email: info@sharpandfade.com</p>
+        <p>Phone: 078 012 2274</p>
+        <div class="footer-social">
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">WhatsApp</a>
+        </div>
+        </div>
+    </div>
+
+    <!-- Bottom -->
+    <div class="footer-bottom">
+        <p>© 2026 Sharp & Fade. All rights reserved.</p>
+    </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
