@@ -337,4 +337,194 @@ select {
     text-transform: uppercase;
 }
 
+/* RESPONSIVENESS */
+
+/* ================================
+   GLOBAL RESPONSIVE FIXES
+================================ */
+html {
+    scroll-behavior: smooth;
+}
+
+img,
+iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    width: 100%;
+    max-width: 320px;
+}
+
+/* ================================
+   HERO SECTION
+================================ */
+.hero {
+    min-height: 100vh;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.header {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0 0 80px 80px;
+}
+
+.header h1 {
+    font-size: clamp(1rem, 4vw, 2rem);
+}
+
+.hero-btn {
+    width: 100%;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+/* ================================
+   ABOUT SECTION
+================================ */
+.about {
+    margin-top: -20px;
+}
+
+.about-container {
+    width: 95%;
+    padding: 1.5rem;
+}
+
+.about-content,
+.location,
+.appoint {
+    padding: 1.5rem 1rem;
+    text-align: center;
+}
+
+.about-content p,
+.location p {
+    font-size: 0.95rem;
+}
+
+/* ================================
+   MAP
+================================ */
+.map-container iframe {
+    height: 40vh;
+    min-height: 280px;
+}
+
+/* ================================
+   BOOKING FORM
+================================ */
+#booking-form {
+    width: 100%;
+    max-width: 360px;
+}
+
+#booking-form input,
+#booking-form select,
+#booking-form button {
+    width: 100%;
+}
+
+/* ================================
+   FOOTER
+================================ */
+.footer-container {
+    padding: 40px 20px;
+}
+
+.footer-column {
+    text-align: center;
+}
+
+.footer-social a {
+    display: inline-block;
+    margin: 0 8px;
+}
+
+/* ================================
+   TABLET (≥ 768px)
+================================ */
+@media (min-width: 768px) {
+
+    .hero-btn {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-btn button {
+        width: auto;
+    }
+
+    .about-content,
+    .location,
+    .appoint {
+        padding: 2.5rem;
+    }
+
+    .map-container iframe {
+        height: 45vh;
+    }
+
+    #booking-form {
+        max-width: 420px;
+    }
+
+    .footer-column {
+        text-align: left;
+    }
+}
+
+/* ================================
+   LAPTOP (≥ 1024px)
+================================ */
+@media (min-width: 1024px) {
+
+    .hero {
+        min-height: 90vh;
+    }
+
+    .about-container {
+        width: 85%;
+        padding: 3rem;
+    }
+
+    .about-content p {
+        font-size: 1.05rem;
+    }
+
+    .map-container iframe {
+        height: 50vh;
+    }
+
+    #booking-form {
+        max-width: 480px;
+    }
+}
+
+/* ================================
+   LARGE SCREENS (≥ 1440px)
+================================ */
+@media (min-width: 1440px) {
+
+    body {
+        font-size: 18px;
+    }
+
+    .about-container {
+        width: 75%;
+    }
+
+    .hero-btn {
+        gap: 1rem;
+    }
+
+    .footer-container {
+        max-width: 1400px;
+    }
+}
+
 
